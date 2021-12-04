@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Js cube</title>
+
+    <style>
+       *{
+          margin:0px;
+          background:black
+       }
+       model-viewer{
+          height:100vh;
+          width:100vw;
+          align:center;
+       }
+       #hotspot-demo{
+         animation: fadein 2.5s ease-in 0s;
+       }
+       @-webkit-keyframes fadein {
+  0% {
+    opacity:0;
+  }
+  50% {
+    opacity:0;
+  }
+
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadein {
+  0% {
+    opacity:0;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadein {
+  0% {
+    opacity:0;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+     </style>  
+     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script> 
+</head>
+<body>
+     
+   <model-viewer id="hotspot-demo" animation-name="Idle" camera-controls auto-rotate   src="airplane.glb" style="--poster-color:#ffffff00;" alt="A 3D model of an astronaut." data-js-focus-visible="" ar-status="not-presenting" interpolation-decay="150" interaction-prompt="none" ar-placement="floor" exposure="2.4" scale="0.15 0.15 0.15" orientation="0deg 0deg -45deg" field-of-view="60deg" environment-image="neutral"></model-viewer>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+        <script>
+         
+         </script>
+        <script src="sample.js"></script>
+</body>
+</html>
